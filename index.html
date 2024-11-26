@@ -5,18 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axolotl2D Web Test</title>
     <style>
-        html, body
-        {
+        html, body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: transparent;
+            background-color: #282c34;
+            color: white;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .header {
+            font-size: 2em;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .score {
+            font-size: 1.5em;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .start-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #61dafb;
+            border: none;
+            border-radius: 5px;
+            color: #282c34;
         }
     </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <h1>WEB TEST</h1>
+    <div class="container">
+        <div class="score">Fake Score: 0</div>
+        <button class="start-button">Some Button Here</button>
+        <div class="header">Axolotl2D Example CefSharp</div>
     </div>
 </body>
 </html>
