@@ -47,11 +47,18 @@
             background-color: #0023ff;
         }
     </style>
+    <script>
+        let score = 0;
+        function incrementScore() {
+            score++;
+            document.querySelector('.score').textContent = 'Fake Score: ' + score;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="score">Fake Score: 0</div>
-        <button class="start-button">Some Button Here</button>
+        <button class="start-button" onclick="incrementScore()">Some Button Here</button>
         <div class="header">Axolotl2D Example CefSharp</div>
     </div>
 </body>
